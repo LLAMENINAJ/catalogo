@@ -171,7 +171,7 @@ header{position:sticky;top:0;z-index:20;background:var(--cb);border-bottom:1px s
 <div class="modal" id="modal"><div class="sheet" id="sheet"></div></div>
 <div class="modal" id="cartmodal"><div class="sheet solo" id="cartsheet"></div></div>
 <div class="toast" id="toast"></div>
-<script id="d" type="application/json">{"mode":"mega","items":[],"updatedAt":"2026-11-04T13:13:33.454Z","apiBase":"https://llacrm.com","vendedoras":[],"catOrder":[],"itemOrderByCat":{},"vendedoraFixa":"DEYSE ARRUDA DE OLIVEIRA","tabelaPreco":"varejo","showcase":false,"promocao":true}</script>
+<script id="d" type="application/json">{"mode":"mega","items":[],"updatedAt":"2026-11-04T13:15:23.076Z","apiBase":"https://llacrm.com","vendedoras":[],"catOrder":[],"itemOrderByCat":{},"vendedoraFixa":"DEYSE ARRUDA DE OLIVEIRA","tabelaPreco":"varejo","showcase":false,"promocao":true}</script>
 <script>
 var D=JSON.parse(document.getElementById('d').textContent);
 var params=new URLSearchParams(location.search);
@@ -673,7 +673,7 @@ chips();grid();fab();
   }
   document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')check()});
   window.addEventListener('pageshow',function(){check()});
-  setInterval(function(){if(document.visibilityState==='visible')check()},5*60*1000);
+  setInterval(function(){if(document.visibilityState==='visible')check()},60*1000);   // 1 min: peça liberada volta rápido
   setTimeout(check,30000);
 })();
 </script>
